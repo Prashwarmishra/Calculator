@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background-color: #121212;
+    font-family: sans-serif;
+}
+h1{
+    color: white;
+    letter-spacing: 1px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper{
+    height: 450px;
+    width: 500px;
+    background-color: black;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1.5fr 5fr;
+}
+.screen{
+    width: 100%;
+    background-color: rgb(187, 186, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.display{
+    height: 90%;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-shrink: 3;
+}
+.display h1{
+    margin: 0;
+    font-family: sans-serif;
+    color: blue;
+    font-size: 2em;
+    font-weight: 100;
+}
+.keyboard{
+    width: 100%;
+    background-color: lightcoral;
+    box-sizing: border-box;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    border-radius: 0 0 10px 10px;
+}
+.child{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 125ms ease;
+}
+.child:hover{
+    background-color: goldenrod;
+}
+.child span{
+    font-size: 2em;
+}
+.bck-color-red{
+    background-color: maroon;
+    color: white;
+}
+.size-two{
+    grid-column: 1/3;
+}
